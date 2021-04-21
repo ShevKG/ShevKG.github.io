@@ -141,13 +141,30 @@ html, body {
     background: rgb(240,240,240);
     background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
     font-weight: bold;
+
+    background: rgb(240,240,240);
+    background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+
+    -webkit-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
+    -moz-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
+    box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
 }
 
 .login-button:hover,
 .register-button:hover {
-  background: rgb(240,240,240);
-  background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
+    cursor: pointer;
+}
+
+.login-button:active,
+.register-button:active {
+
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 47%, rgba(210,210,210,1) 95%);
   cursor: pointer;
+  -webkit-box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
+  -moz-box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
+  box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
+
 }
 
 .forgot-password {
@@ -155,4 +172,13 @@ html, body {
   margin: 0;
   display: flex;
   margin: 5%;
+}
+
+.forgot-password > a {
+  text-decoration: none;
+}
+
+.forgot-password > a:hover {
+  text-decoration: underline;
+  color: navajowhite;
 }
