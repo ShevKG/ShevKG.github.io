@@ -1,3 +1,5 @@
+
+
 $('body').on('click', '.password-checkbox', function(){
 
 	if ($(this).is(':checked')){

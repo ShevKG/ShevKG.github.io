@@ -84,3 +84,39 @@ html, body {
   position: relative;
   margin-left: 55px;
 }
+
+.login-buttons-container {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.login-button {
+  align-self:flex-start;
+  margin-bottom: 20px;
+}
+
+.register-button {
+  align-self:flex-end;
+  margin-bottom: 20px;
+}
+
+.login-button,
+.register-button {
+  width: 160px;
+  height: 60px;
+  z-index: auto;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.forgot-password {
+  z-index: auto;
+  margin: 0;
+  display: flex;
+  margin: 5%;
+}
