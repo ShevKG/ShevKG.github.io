@@ -15,18 +15,39 @@ html, body {
   top: 0;
   left: 0;
   overflow: auto;
-  background-color: whitesmoke;
+  background-color: snow;
 }
 
 
+
+.menu-bar-plug {
+  padding: 20px 0;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 8%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background: rgb(143,205,236);
+  background: radial-gradient(circle, rgba(143,205,236,1) 14%, rgba(79,153,219,0.9990195907464549) 89%);
+}
+
+.menu-text {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  font-size: 2vw;
+}
 
 .login-window {
     width: 500px;
     height: 500px;
     position: absolute;
-    top: 0;
+    top: 25%;
     right: 0;
-    bottom: 0;
+    bottom: 25%;
     left: 0;
     margin: auto;
   }
@@ -144,28 +165,36 @@ html, body {
 
     background: rgb(240,240,240);
     background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
-
+    cursor: pointer;
     -webkit-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
     -moz-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
-    box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
+      box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
 }
 
 .login-button:hover,
 .register-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .login-button:active,
 .register-button:active {
 
   background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 47%, rgba(210,210,210,1) 95%);
+  background: radial-gradient(circle, rgba(255,255,255,1) 47%, rgba(210,210,210,1) 95%);
   cursor: pointer;
+  box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
   -webkit-box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
   -moz-box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
-  box-shadow: 12px 11px 6px -2px rgba(34, 60, 80, 0.18);
+  outline: none;
+}
+
+.login-button:focus,
+.register-button:focus {
+  cursor: pointer;
+  outline: none;
 
 }
+
 
 .forgot-password {
   z-index: auto;
