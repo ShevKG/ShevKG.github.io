@@ -4,7 +4,7 @@ var $user = {
 	password: "",
 };
 
-var main_page_url = "login.html";
+var main_page_url = "main.html";
 
 
 $('body').on('click', '.password-checkbox', function(){
