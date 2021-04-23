@@ -111,6 +111,9 @@ html, body {
 .input-password {
   color: black;
   text-shadow: none;
+  transition-property: box-shadow;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
 }
 
 .input-login:hover,
@@ -119,6 +122,8 @@ html, body {
   -webkit-box-shadow:0px -1px 8px 7px rgba(230,209,183,0.83);
   -moz-box-shadow:0px -1px 8px 7px rgba(230,209,183,0.83);
 }
+
+
 
 
 .show-password {
@@ -159,26 +164,23 @@ html, body {
 .register-button {
     border-radius: 15px;
     color:black;
-    background: rgb(240,240,240);
-    background: radial-gradient(circle, rgba(240,240,240,1) 0%, rgba(255,255,255,1) 100%);
     font-weight: bold;
-
     background: rgb(240,240,240);
     background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 100%);
     cursor: pointer;
     -webkit-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
     -moz-box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
-      box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
+    box-shadow: 10px 9px 6px -2px rgba(34, 60, 80, 0.18);
 }
 
 .login-button:hover,
 .register-button:hover {
-  cursor: pointer;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(190,190,190,0.9990195907464549) 90%);
 }
 
 .login-button:active,
 .register-button:active {
-
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 47%, rgba(210,210,210,1) 95%);
   cursor: pointer;
@@ -192,7 +194,6 @@ html, body {
 .register-button:focus {
   cursor: pointer;
   outline: none;
-
 }
 
 
