@@ -6,6 +6,7 @@
     font-size: 18px;
     color: floralwhite;
     text-shadow: 2px 2px 6px rgba(150, 150, 206, 1);
+    border: 2px dotted black;
 }
 
 .body {
@@ -24,10 +25,9 @@
 }
 
 .menu-container > .top-bar-menu {
-  top: -20%;
+  top: 0%;
   transition-timing-function: cubic-bezier(0,0,0.58,1);
   transition-property: top;
-  transition-duration: .35s;
 }
 
 .top-bar-menu {
@@ -49,10 +49,6 @@
 
 .top-bar-menu > h1 {
     font-size: 2vw;
-}
-
-.menu-container:hover > .top-bar-menu{
-  top: 0%
 }
 
 .top-bar-button {
@@ -78,7 +74,7 @@
 }
 
 .top-bar-button {
-  transition: box-shadow .10s;
+  transition: box-shadow 30ms;
 }
 
 .top-bar-button:hover {
@@ -89,31 +85,89 @@
   -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
   -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
-
 }
-
 
 .side-panel-container {
   display: flex;
   position: fixed;
   align-self: flex-end;
   z-index: 0;
-  width: 15%;
+  width: 11vw;
   height: 100%;
   background-color: #9CCDE2;
   background: rgb(239,250,250);
   background: linear-gradient(180deg, rgba(163,225,256,1) 14%, rgba(99,173,239,0.9990195907464549) 89%);
 }
 
-.side-panel-container {
-  justify-content: space-between;
-  align-items:center;
-  flex-direction:row;
-  flex-wrap: wrap;
-}
-
 .side-panel-container > div > h1,
 .side-panel-container > div > p {
     padding-left: 8px;
     font-size: 1.5vw;
+}
+
+.content-container {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  position: absolute;
+  border: 3px dotted purple;
+  height: auto;
+  width: calc(100% - 12vw);
+  margin: 0 auto;
+  margin-left: 11vw;
+  margin-top: 60%;
+  align-self: center;
+}
+
+.interactive-map-container {
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: 3px dotted red;
+  height: 50vw;
+  width: calc(100% - 12vw);
+  margin: 0 auto;
+  align-self: center;
+}
+
+.vehicle-table-container {
+  display: flex;
+  background-color: blue;
+  border: 1px dotted purple;
+  text-shadow: none;
+  height: auto;
+  width: 90%;
+  position: relative;
+  align-self: center;
+}
+
+.interactive-map-container {
+  justify-content: center;
+}
+
+.interactive-map-container > h2 {
+  display: flex;
+  position: sticky;
+  color: lightsalmon;
+  align-items: flex-end;
+  justify-content: center;
+  width:  100%;
+  text-shadow: none;
+  font-size: 3vw;
+  margin: 0;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.interactive-map {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: 80%;
+  max-height: 80%;
 }
