@@ -8,6 +8,9 @@
     text-shadow: 2px 2px 6px rgba(150, 150, 206, 1);
 }
 
+.body {
+  overflow: scroll;
+}
 
 .menu-container {
   display: flex;
@@ -24,7 +27,7 @@
   top: -20%;
   transition-timing-function: cubic-bezier(0,0,0.58,1);
   transition-property: top;
-  transition-duration: .40s;
+  transition-duration: .35s;
 }
 
 .top-bar-menu {
@@ -32,11 +35,12 @@
   display: flex;
   position: fixed;
   width: 100vw;
+
   padding: 20px 0;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
   height: 8%;
-  max-height: 8%;
+  max-height: 71.89vh;
 
 
   background: rgb(143,205,236);
@@ -53,20 +57,41 @@
 
 .top-bar-button {
     display: flex;
+    flex-wrap: wrap;
     background: transparent;
     border: none;
-    border-spacing: 10px;
-    border: 1px groove white;
-    -webkit-box-shadow: -2px 11px 14px -8px rgba(34, 60, 80, 0.38);
-    -moz-box-shadow: -2px 11px 14px -8px rgba(34, 60, 80, 0.38);
-    box-shadow: -2px 11px 14px -8px rgba(34, 60, 80, 0.38);
+    border-spacing: 1vh;
+    height: 7.88vh;
+    width: 23vh;
+    font-weight: bolder;
+    font-size: 1.35vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .top-bar-button {
   cursor: pointer;
   padding-left: 3%;
   padding-right: 3%;
+  transition-property: border-bottom;
+  transition-duration: .10s;
 }
+
+.top-bar-button {
+  transition: box-shadow .10s;
+}
+
+.top-bar-button:hover {
+    border-bottom: 5px groove white;
+}
+
+.top-bar-button:active {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+
+}
+
 
 .side-panel-container {
   display: flex;
