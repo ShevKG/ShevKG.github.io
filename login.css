@@ -87,10 +87,12 @@ html, body {
     padding: 5px;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 20px;
+
 
 }
 
@@ -98,17 +100,23 @@ html, body {
   margin-top: 0;
 }
 
-
-.input-password {
-    margin-right: 43.2px;
+.input-login,
+.input-password,
+.repeat-password {
+  margin-right: 20px;
+  display: inline-flex;
 }
 
-.input-login {
-  margin-right: 43px;
+
+.hidable-list,
+.repeat-password-text,
+.repeat-password {
+  display: none;
 }
 
 .input-login,
-.input-password {
+.input-password,
+.repeat-password {
   color: black;
   text-shadow: none;
   transition-property: box-shadow;
@@ -117,13 +125,12 @@ html, body {
 }
 
 .input-login:hover,
-.input-password:hover {
+.input-password:hover,
+.repeat-password:hover {
   box-shadow:0px -1px 8px 7px rgba(230,209,183,0.83);
   -webkit-box-shadow:0px -1px 8px 7px rgba(230,209,183,0.83);
   -moz-box-shadow:0px -1px 8px 7px rgba(230,209,183,0.83);
 }
-
-
 
 
 .show-password {
@@ -201,7 +208,8 @@ html, body {
   z-index: auto;
   margin: 0;
   display: flex;
-  margin: 5%;
+  margin-left: 4%;
+  margin-top: 2%;
 }
 
 .forgot-password > a {

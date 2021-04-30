@@ -17,16 +17,22 @@
         <h1 class="header">ВХОД В СИСТЕМУ МОНИТОРИНГА:</h1>
         <ul class="label-box">
             <li>
-              <div>Введите логин: &nbsp</div>
+              <div>Введите логин:</div>
               <div>  <label for="login">
-                    <input class="input-login" type="text" placeholder="user" id="login-input" name="login">
+                    <input class="input-login" type="text" placeholder="login" id="login-input" name="login">
                 </label></div>
             </li>
             <li>
               <div>Введите пароль:</div>
                 <label for="password">
-                    <input class="input-password" type="password" placeholder="1234" id="password-input" name="password">
+                    <input class="input-password" type="password" placeholder="password" id="password-input" name="password">
                 </label>
+            </li>
+            <li class="hidable-list" id="hidable-list">
+              <div class="repeat-password-text" id="repeat-password-text">&nbspПовторите пароль:</div>
+                  <label for="repeat-password">
+                      <input class="repeat-password" type="password" placeholder="repeat-password" name="repeat-password" id="repeat-password">
+                  </label>
             </li>
             <li>
                 <label  class="show-password"><input type="checkbox" class="password-checkbox">&nbspПоказать пароль</label>
@@ -42,7 +48,7 @@
           </button>
         </div>
 
-        <div class="forgot-password">
+        <div class="forgot-password" id="forgot-password">
           <a href="#">Забыли пароль?</a>
         </div>
     </div>
